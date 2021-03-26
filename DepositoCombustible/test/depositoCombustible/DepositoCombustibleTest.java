@@ -2,38 +2,43 @@ package depositoCombustible;
 
 import static org.junit.Assert.*;
 
+
 import org.junit.Test;
 
 public class DepositoCombustibleTest {
 
+	private static DepositoCombustible tank = new DepositoCombustible(100.0,50.0);
+
 	@Test
 	public void testGetDepositoNivel() {
-		fail("Not yet implemented");
+		assertEquals(50.0,tank.getDepositoNivel(),0); //valor esperado, resuelto, delta
 	}
 
 	@Test
 	public void testGetDepositoMax() {
-		fail("Not yet implemented");
+		assertEquals(100.0,tank.getDepositoMax(),0); //valor esperado, resuelto, delta
 	}
 
 	@Test
 	public void testEstaVacio() {
-		fail("Not yet implemented");
+		assertFalse(tank.estaVacio()); //booleano
 	}
-
+	
 	@Test
 	public void testEstaLleno() {
-		fail("Not yet implemented");
+		assertFalse(tank.estaLleno()); //booleano
 	}
 
 	@Test
 	public void testFill() {
-		fail("Not yet implemented");
+		tank.fill(30.0);
+		assertEquals(80.0,tank.getDepositoNivel(),0); //valor esperado, resuelto, delta
 	}
 
 	@Test
 	public void testConsumir() {
-		fail("Not yet implemented");
+		tank.consumir(30.0);
+		assertEquals(50.0,tank.getDepositoNivel(),0); //valor esperado, resuelto, delta
 	}
 
 }
