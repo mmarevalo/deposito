@@ -29,16 +29,4 @@ public class DepositoCombustibleTest {
 		assertFalse(tank.estaLleno()); //booleano
 	}
 
-	@Test
-	public void testFill() {
-		tank.fill(30.0);
-		assertEquals(80.0,tank.getDepositoNivel(),0); //valor esperado, resuelto, delta
-	}
-
-	@Test
-	public void testConsumir() {
-		tank.consumir(30.0);
-		assertEquals(50.0,tank.getDepositoNivel(),0); //valor esperado, resuelto, delta
-	}
-
 }
