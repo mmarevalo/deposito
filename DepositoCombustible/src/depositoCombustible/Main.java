@@ -1,3 +1,4 @@
+package depositoCombustible;
 /**
  * Main class of the Java program. 
  * 
