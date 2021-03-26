@@ -8,7 +8,7 @@
  * 
  * class invariante 		0.0 &lt;= depNivel &lt;= depMax
  * 
- * @author IES Seveero Ochoa Team
+ * @author IES Seveero Ochoa Team & Miguel Mas
  * @version 1.0
  *
  */
